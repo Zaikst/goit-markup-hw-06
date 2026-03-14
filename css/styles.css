@@ -688,9 +688,10 @@ a {
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: flex-start;
-    padding-left: 108px;
     column-gap: 24px;
     row-gap: 72px;
+    width: 584px; 
+    margin: 0 auto;
   }
 }
 
@@ -699,6 +700,8 @@ a {
     flex-wrap: nowrap;
     padding-left: 0px;
     gap: 0;
+    width: 100%; 
+    margin: 0;
   }
 }
 
@@ -808,7 +811,11 @@ a {
     text-align: left;
   }
 }
-
+@media screen and (min-width: 1158px) {
+  .subscribe {
+    margin-left: auto;
+  }
+}
 .form {
   display: flex;
   flex-direction: column;
