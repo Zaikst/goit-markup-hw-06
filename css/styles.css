@@ -753,7 +753,7 @@ a {
   width: 40px;
   height: 40px;
   background-color: #4d5ae5;
-  border-radius: 50%; /* Ті самі кола */
+  border-radius: 50%; 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -838,7 +838,7 @@ a {
 
 .subscribe-button:hover,
 .subscribe-button:focus {
-  background-color: #404bbf; /* Або #31d0aa згідно вашого дизайну */
+  background-color: #31d0aa; 
 }
 
 .subscribe-icon {
@@ -846,9 +846,6 @@ a {
   fill: #ffffff;
 }
 
-/* =======================================
-   MODAL BACKDROP (Фон модального вікна)
-======================================= */
 .backdrop {
   position: fixed;
   top: 0;
@@ -873,18 +870,14 @@ a {
   visibility: visible;
 }
 
-/* =======================================
-   MODAL WINDOW (Саме вікно - Mobile First)
-======================================= */
-/* 1. Стилі для мобільного телефону (від 320px) */
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  width: 288px; /* Ширина для телефону */
-  padding: 72px 16px 24px 16px; /* Вужчі відступи по боках */
+  width: 288px; 
+  padding: 72px 16px 24px 16px; 
 
   border-radius: 4px;
   background-color: #fcfcfc;
@@ -896,17 +889,12 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 2. Стилі для планшета і ПК (від 768px і вище) */
 @media screen and (min-width: 768px) {
   .modal {
-    width: 408px; /* Розширюємо вікно */
-    padding: 72px 24px 24px 24px; /* Збільшуємо відступи по боках */
+    width: 408px;
+    padding: 72px 24px 24px 24px; 
   }
 }
-
-/* =======================================
-   MODAL CLOSE BUTTON (Кнопка-хрестик)
-======================================= */
 .modal-button {
   position: absolute;
   top: 24px;
@@ -944,9 +932,6 @@ a {
   fill: #ffffff;
 }
 
-/* =======================================
-   MODAL FORM ELEMENTS (Форма)
-======================================= */
 /* --- Заголовок --- */
 .modal-slogan {
   font-weight: 500;
@@ -954,11 +939,10 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #2e2f42; /* Якщо є змінна, можна var(--navy-blue) */
+  color: #2e2f42;
   margin-bottom: 16px;
 }
 
-/* --- Обгортки полів --- */
 .modal-field {
   margin-bottom: 8px;
 }
@@ -967,7 +951,6 @@ a {
   margin-bottom: 16px;
 }
 
-/* --- Лейбли (Підписи над полями) --- */
 .modal-label {
   display: block;
   font-size: 12px;
@@ -983,12 +966,12 @@ a {
 }
 
 .modal-input {
-  width: 100%; /* Гнучко займає всю доступну ширину */
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 38px; /* Місце для іконки */
+  padding-left: 38px; 
   outline: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -998,7 +981,6 @@ a {
   border-color: #4d5ae5;
 }
 
-/* --- Іконки всередині інпутів --- */
 .modal-input-icon {
   position: absolute;
   left: 16px;
@@ -1012,9 +994,9 @@ a {
   fill: #4d5ae5;
 }
 
-/* --- Текстова область (Коментар) --- */
+
 .modal-textarea {
-  width: 100%; /* Гнучко займає всю доступну ширину */
+  width: 100%; 
   height: 120px;
   font-size: 12px;
   line-height: 1.17;
@@ -1026,7 +1008,7 @@ a {
   background-color: transparent;
   padding: 8px 16px;
   outline: transparent;
-  resize: none; /* Забороняємо користувачу розтягувати поле */
+  resize: none;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1035,33 +1017,25 @@ a {
   border-color: #4d5ae5;
 }
 
-/* =======================================
-   CHECKBOX & PRIVACY POLICY (Чекбокс)
-======================================= */
 .modal-field-checkbox {
   margin-bottom: 24px;
 }
 
-/* --- Лейбл з текстом --- */
 .modal-label-checkbox {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-
-  /* Змінюємо підхід: замість flex робимо блокове відображення */
   display: block;
   position: relative;
-  /* Робимо відступ зліва, щоб звільнити місце під квадрат чекбокса (16px + 8px gap) */
   padding-left: 24px;
 }
 
-/* --- Кастомний квадратик чекбокса --- */
+/* --- Кастомний чекбок --- */
 .custom-checkbox {
-  /* Відриваємо його від тексту і ставимо точно зліва */
   position: absolute;
   left: 0;
-  top: 8px; /* Вирівнюємо точно по центру першого рядка тексту */
+  top: 8px; 
   transform: translateY(-50%);
 
   width: 16px;
@@ -1091,9 +1065,6 @@ a {
   text-decoration: underline;
 }
 
-/* =======================================
-   SUBMIT BUTTON (Кнопка відправки)
-======================================= */
 .submit-button {
   display: block;
   margin: 0 auto;
