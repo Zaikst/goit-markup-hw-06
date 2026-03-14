@@ -190,7 +190,7 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
 }
 
@@ -272,7 +272,7 @@ a {
 }
 
 .hero-title {
-  max-width: 288px;
+  max-width: 216px;
   margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
@@ -618,6 +618,7 @@ a {
   display: block;
   max-width: 100%;
   object-fit: cover;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -696,7 +697,7 @@ a {
 @media screen and (min-width: 1158px) {
   .container-footer {
     flex-wrap: nowrap;
-    padding-left: 15px;
+    padding-left: 0px;
     gap: 0;
   }
 }
