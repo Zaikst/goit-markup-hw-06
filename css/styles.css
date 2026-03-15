@@ -606,6 +606,10 @@ a {
   }
 }
 
+.portfolio-wrapper {
+  position: relative;
+  overflow: hidden;
+}
 .portfolio-img {
   display: block;
   max-width: 100%;
